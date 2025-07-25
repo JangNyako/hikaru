@@ -161,6 +161,132 @@ section h3{
     height: auto;
     border-radius: 6px;
 }
+
+#choice p {
+    font-size: 22px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 30px;
+}
+
+.choice-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.book{
+    flex:1;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(25,32,68,1) 0%, rgba(32,19,34,1) 62%);
+    padding: 40px;
+    height: 300px;
+    position: relative;
+}
+
+.book-img{
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.book-img img{
+    width: 100%;
+    height: auto;
+}
+
+#choice p {
+    font-size: 22px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 30px;
+}
+.choice-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+footer{
+    padding: 60px 10%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.footer-content a{
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.left{
+    flex-basis: 60%;
+}
+
+.center,.right{
+    flex-basis: 20%;
+    vertical-align: top;
+}
+
+.col h2{
+    color: rgba(255,255,255,0.7);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.col h3{
+    color: rgba(255,255,255,0.7);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+.footer-nav li:not(:last-child){
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+.footer-info{
+    margin-top: 20px;
+    color: rgba(255,255,255,0.7);
+}
+.social{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.social a{
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+.copyright{
+    margin-top: 20px;
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+.footer-content p {
+    font-size: 14px;
+    line-height: 0.6;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width:768px){
     .log{
         font-size:20px;
@@ -184,5 +310,36 @@ section h3{
     .add-email button{
         font-size : 12px;
         padding : 10px 15px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .book{
+        flex-basis: 100%;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1220px){
+    .book{
+        flex-basis: calc(50%-15px);
+    }
+}
+
+@media only screen and (max-width :768px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col h2{
+        color: rgba(255,255,255,0.7);
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .col h3{
+        color: rgba(255,255,255,0.7);
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 }
