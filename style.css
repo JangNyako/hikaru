@@ -86,13 +86,14 @@ nav div{
     flex: 1;
 }
 .header-content span{
-    background-color: blue;
+    background: linear-gradient(to right, #2615bb 0%,#150a7a 60%);
     font-size: 1.5em;
 }
 .header-content h3{
     word-break: keep-all;
     line-height: 1.6;
 }
+/*
 .add-email{
     background-color: #fff;
     border-radius: 4px;
@@ -120,7 +121,7 @@ nav div{
     font-size: clamp(1rem,2.5vw, 1.2rem);
     padding: 0.8rem 1.5rem;
     cursor: pointer;
-}
+} */
 
 
 section{
@@ -235,19 +236,19 @@ section h3{
     z-index: 0;
     filter: brightness(0.4);
 }
+.choice-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 #choice p {
     font-size: 1rem;
     color: rgba(255,255,255,0.7);
     margin-bottom: 30px;
 }
-
-.choice-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 30px;
+.book h3{
+    font-size: 1.5rem;
 }
-
 .book{
     flex:1 1 280px;
     border: 0;
@@ -278,12 +279,7 @@ section h3{
     color: rgba(255,255,255,0.7);
     margin-bottom: 30px;
 }
-.choice-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-}
+
 
 footer{
     padding: 60px 10%;
